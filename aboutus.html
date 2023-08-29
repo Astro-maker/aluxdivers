@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css/aboutus.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Nunito+Sans:ital,wght@1,300&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+        <title>Alux Divers</title>
+    </head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header__logo-container">
+                <a href="./index.html">
+                    <img src="./assets/alux-logo.png" alt="Alux Divers Logo">
+                </a>
+            </div>
+            <div class="header__menu-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <div class="menu inactive">
+            <ul>
+                <li><a href="./aboutus.html">About us.</a></li>
+                <li><a href="./dsd.html">Discover Scuba Diving</a></li>
+                <li><a href="./localdiving.html">Local Diving</a></li>
+                <li><a href="#">Courses</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="main__title-container">
+            <img src="./assets/alux-logo.png" alt="">
+            <h1>About Us</h1>
+        </section>
+    </main>
+
+    <script>
+        const menuBar = document.querySelector(".header__menu-container");
+        const menu = document.querySelector(".menu");
+
+        menuBar.addEventListener("click", toggleMenu);
+
+        function toggleMenu(){
+            menu.classList.toggle("inactive");
+            menuBar.classList.toggle("change")
+        }
+    </script>
+</body>
+</html>

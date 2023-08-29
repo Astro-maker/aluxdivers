@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css/dsc.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Nunito+Sans:ital,wght@1,300&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+        <title>Alux Divers</title>
+    </head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header__logo-container">
+                <a href="./index.html">
+                    <img src="./assets/alux-logo.png" alt="Alux Divers Logo">
+                </a>
+            </div>
+            <div class="header__menu-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <div class="menu inactive">
+            <ul>
+                <li><a href="./aboutus.html">About us.</a></li>
+                <li><a href="./dsd.html">Discover Scuba Diving</a></li>
+                <li><a href="./localdiving.html">Local Diving</a></li>
+                <li><a href="#">Courses</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="main__title-container">
+
+            <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+                <source src="./assets/bubbles-background.mp4" type="video/mp4">
+              </video>
+
+            <img src="./assets/alux-logo.png" alt="">
+            <h1>Discover Scuba Diving</h1>
+        </section>
+
+        <section class="info-dsd">
+            <div class="info-dsd__container">
+                <h2>Basic Diver</h2>
+                <ul class="info-dsd__container info">
+                    <li>
+                        <p class="p-info">Academic session</p>
+                        <ul>
+                            <li>Equipment presentation</li>
+                            <li>Pression theory</li>
+                            <li>Underwater Communication</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="p-info">Confined Water session</p>
+                        <ul>
+                            <li>Regulator clearing</li>
+                            <li>Mask clearing</li>
+                            <li>Regulator retrieval</li>
+                            <li>Equalization techniques</li>
+                            <li>Bouyancy control</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="p-info">Open Water Dive</p>
+                        <ul>
+                            <li>Dive to a max depth of 12m/40f</li>
+                            <li>Dive time 40 to 50 minutes</li>
+                            <li></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="#">Book Now!</a>
+            </div>
+        </section>
+
+        <section class="dive-spots">
+            <h3>Dive Sites</h3>
+            <p>Our dive sites available for this course are the following: Acuario, Bahía and Dos Ojos</p>
+            <div class="map-container">
+            </div>
+        </section>
+
+        <footer>
+            <div class="info">
+                <p>copyright all rights reserved</p>
+                <p>Icons by: <a href="https://iconos8.es/">Iconos8</a></p>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li><a href="#"><span class="instagram icon"></span></a></li>
+                    <li><a href="#"><span class="tiktok icon"></span></a></li>
+                    <li><a href="//api.whatsapp.com/send?phone=529984206607&text=Hi, im interested in diving with you."><span class="whatsapp icon"></span></a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        const menuBar = document.querySelector(".header__menu-container");
+        const menu = document.querySelector(".menu");
+
+        menuBar.addEventListener("click", toggleMenu);
+
+        function toggleMenu(){
+            menu.classList.toggle("inactive");
+            menuBar.classList.toggle("change")
+        }
+    </script>
+</body>
+</html>
